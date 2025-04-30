@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto; /* Header, main content, footer */
+  min-height: 100vh; /* Full height of the viewport */
+  padding: 20px 60px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  background-color: #042326;
+  color: #fff;
+}
+
+.top-bar {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px;
+}
+header {
+  display: flex;
+  justify-content: flex-start;
+  text-align: center;
+}
+.logo-container {
+  width: 2rem; /* Ajusta el tamaño según sea necesario */
+  height: 2rem; /* Ajusta el tamaño según sea necesario */
+  border-radius: 50%;
+  background-color: #fff;
+}
+.logo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Mantiene la proporción de la imagen */
+}
+h1 {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-left: 10px; /* Espacio entre la imagen y el texto */
+}
+.dev_user {
+  color: #9bf2ea;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center; /* Centra la barra de navegación */
+  align-items: right;
+  width: 100%;
+}
+.navbar ul {
+  width: 80%;
+  display: flex; /* Para alinear los elementos de la lista horizontalmente */
+  justify-content: space-around; /* Espacio entre los elementos */
+  align-items: center; /* Centra verticalmente los elementos */
+  list-style: none; /* Elimina los puntos de la lista */
+}
+.navbar li,
+a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.navbar li a:hover {
+  color: #1d7373;
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+  width: 100%;
+  height: 100%;
+}
+.profile_aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 20%;
+  height: 100%;
+  background-color: #41bfb3;
+  border-radius: 10px;
+}
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  height: auto;
+  padding: 30px 0px;
+}
+.profile-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10%;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.408);
+}
+
+.profile-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #042326;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 75%;
+  height: 100%;
+}
+
+.under-construction-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #41bfb3;
+  color: black;
+  border-radius: 10px;
+}
+
+.under-construction {
+  width: 95%;
+  height: 350px;
+  border-radius: 10px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px;
+  color: #fff;
+  font-size: 14px;
+}
