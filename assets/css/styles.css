@@ -119,12 +119,12 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  width: 70%;
+  width: 60%;
 }
 
 .social-icons a{
   color: #9BF2EA;
-  font-size: 1.7rem;
+  font-size: 2rem;
   transition: color 0.3s ease;
 }
 .social-icons a:hover {
@@ -144,6 +144,7 @@ a {
 
 .btn_Cv_Download:hover {
   background-color: #9BF2EA;
+  color: black;
 }
 
 .main-content {
